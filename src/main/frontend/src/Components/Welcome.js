@@ -1,16 +1,18 @@
 function Welcome(){
 return (
     <>
+    <div id="realBackground">
     <div id="mainBackGround">
+    <center><h1 id="headings">ToolBox</h1></center>
     <div className = "container">
-    <center><img id="mainImage2" src={`${process.env.PUBLIC_URL}/Logos/Logo.png`} alt="Welcome to Breed Shelter" /></center>
+    <center><img id="mainImage2" src={`${process.env.PUBLIC_URL}/FrontPage/Logo.png`} alt="Tools" /></center>
     </div>
     <nav class="crumbsArea">
         <center>
             <ol>
-                <li class="crumb"><a href="/breeded-shelter/facility" id="navBar">Departments</a></li>
-                <li class="crumb"><a href="/breeded-shelter/staff" id="navBar2">Weekly Ada</a></li>
-                <li class="crumb"><a href="/breeded-shelter/residents" id="navBar3">Sign In</a></li>
+                <span class="HomeLinks"><a href="/Parts/departments/:department" id="navBar">Departments</a></span><br/>
+                <span class="HomeLinks"><a href="/Parts/Circular" id="navBar2">Weekly Ads</a></span><br/>
+                <span class="HomeLinks"><a href="/Parts/About" id="navBar3">All About Tools</a></span>
             </ol>
         </center>
     </nav>
@@ -19,7 +21,6 @@ return (
     </div>
     <center>
     <div className="welcomePage">
-      <img id="mainImage" src={`${process.env.PUBLIC_URL}/Dogs/affenpinscher1_1.jpg`} alt="Welcome to Breed Shelter" />
     </div>
     </center>
     </div>
@@ -29,6 +30,9 @@ return (
         <center><button id="button1" type="button" disabled ><b>Ｗ ｅ ｌ ｃ ｏ ｍ ｅ</b></button></center>
         </div>
     </div>
+    </div>
     </>
     )
 }
+
+export default Welcome;

@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.container{
+background: #FCD667;
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 3%;
+border: 3px dashed #C46210;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+#mainBackGround{
+background-color: #FCD667;
+opacity: 55%;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ #mainImage2{
+ height: 15%;
+ width: 20%;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ Body{
+background-image: url("renovation.jpg");
+background-repeat: no-repeat;
+background-size: 100%;
+width: 100%;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ #headings{
+ color: #B73239;
+ font-size: 3em;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .HomeLinks a{
+ font-size: 2em;
+ color: #4A646C;
+ }
+
+ .HomeLinks a:hover {
+   background-color: yellow;
+   color: green;
+   border: 1px solid #FCD667;
+ }
+
+ #mainImage2{
+ opacity: 100%;
+ }
