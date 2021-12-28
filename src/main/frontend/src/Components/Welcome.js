@@ -12,7 +12,7 @@ return (
             <ol>
                 <span class="HomeLinks"><a href="/Parts/departments/:department" id="navBar">Departments</a></span><br/>
                 <span class="HomeLinks"><a href="/Parts/Circular" id="navBar2">Weekly Ads</a></span><br/>
-                <span class="HomeLinks"><a href="/Parts/About" id="navBar3">All About Tools</a></span>
+                <span class="HomeLinks"><a href="/Parts/About" id="navBar3">All About ToolBox</a></span>
             </ol>
         </center>
     </nav>
