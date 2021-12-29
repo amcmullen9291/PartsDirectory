@@ -6,6 +6,7 @@ import WeeklyAds from './Components/WeeklyAds';
 import DepartmentListings from './Components/DepartmentListings';
 import DetailedDescription from './Components/DetailedDescription';
 import About from './Components/About';
+import Circular from './Components/Circular';
 
 // add email form for appointments?
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Welcome/>} />
           <Route path="/Parts/About" element={<About />} />
           <Route path="/Parts/Circular" element={<WeeklyAds />} />
+          <Route path="/Parts/Circular/previous_week" element={<Circular />} />
           <Route path="/Parts/departments/:department" element={<DepartmentListings />} />
           <Route path="/Parts/departments/:department/:partsNumber" element={<DetailedDescription />} />
         </Routes>
