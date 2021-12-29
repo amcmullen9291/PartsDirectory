@@ -108,3 +108,25 @@ font-size: 2em;
 #instructions{
 font-size: 2em;
 }
+
+#carouselPics{
+height: 50%;
+width: 50%;
+}
+
+.carouselText{
+color: black;
+}
+
+#carouselBlog{
+right:0;
+top:0;
+position: absolute;
+background-color: white;
+border: 2px solid brown;
+width: 20%;
+margin-top: 10%;
+opacity: 75%;
+font-size: 28px;
+margin-right: 1%;
+}
