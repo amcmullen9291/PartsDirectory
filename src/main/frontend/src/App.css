@@ -26,6 +26,7 @@ width: 100%;
  #headings{
  color: #B73239;
  font-size: 3em;
+ margin-top: 5%;
  }
 
  .HomeLinks a{
@@ -109,9 +110,16 @@ font-size: 2em;
 font-size: 2em;
 }
 
-#carouselPics{
-height: 50%;
-width: 50%;
+.carouselPics{
+height:25%;
+width: 25%;
+}
+
+.carouselPics2{
+height:25%;
+width: 25%;
+padding: 20px;
+margin: 5%;
 }
 
 .carouselText{
@@ -129,4 +137,10 @@ margin-top: 10%;
 opacity: 75%;
 font-size: 28px;
 margin-right: 1%;
+}
+
+
+#button1{
+border: 3px solid grey;
+margin-left: 5%;
 }

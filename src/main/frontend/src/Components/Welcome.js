@@ -1,4 +1,5 @@
 function Welcome(){
+
 return (
     <>
     <div id="realBackground">
@@ -12,7 +13,6 @@ return (
             <ol>
                 <span class="HomeLinks"><a href="/Parts/departments/:department" id="navBar">Departments</a></span><br/>
                 <span class="HomeLinks"><a href="/Parts/Circular" id="navBar2">Weekly Ads</a></span><br/>
-                <span class="HomeLinks"><a href="/Parts/Circular/previous_week" id="navBar2">Last Week&#39;s Circular</a></span><br/>
                 <span class="HomeLinks"><a href="/Parts/About" id="navBar3">Inside the ToolBox</a></span>
             </ol>
         </center>
@@ -28,7 +28,7 @@ return (
     <div id="mainBottom">
         <div>
         <hr/>
-        <center><button id="button1" type="button" disabled ><b>Ｗ ｅ ｌ ｃ ｏ ｍ ｅ</b></button></center>
+        <center><button id="button1" type="button" disabled ><b>【﻿ＴＯＯＬ　ＢＯＸ】</b></button></center>
         </div>
     </div>
     </div>
