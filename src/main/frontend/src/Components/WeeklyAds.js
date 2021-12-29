@@ -18,7 +18,7 @@ return (
     <div>
     <center><h1>The Circular</h1></center>
     </div>
-    <center><a href={"/"}>Return to Main Menu</a></center>
+    <center><a href={"/"} id="returnHomeLink">Return to Main Menu</a></center>
     <br/>
     <hr/><br/>
 	<div style={{ display: 'block', height: 500, width: 500, padding: 30 }}>
