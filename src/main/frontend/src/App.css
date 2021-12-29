@@ -42,3 +42,69 @@ width: 100%;
  #mainImage2{
  opacity: 100%;
  }
+
+li{
+     list-style-type: none;
+}
+
+.carousel{
+width: 100vw;
+height: 100vh;
+position: relative;
+}
+
+.carousel > ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.slide{
+position: absolute;
+inset: 0;
+}
+
+.slide > img {
+display: block;
+object-position: center;
+}
+
+.slide[data-active]{
+opacity: 1;
+}
+
+#leftBtn:hover,
+#leftBtn:focus,
+#rightBtn:hover,
+#rightBtn:focus{
+color: white;
+background-color: rgba(0,0,0,.2);
+}
+
+#leftBtn{
+position: absolute;
+background: none;
+border: 3px solid red;
+z-index: 2;
+color: white;
+background-color: rgba(0,0,0,.1);
+left: 0;
+margin-left: 20%;
+font-size: 2em;
+}
+
+#rightBtn{
+position: absolute;
+background: none;
+border: 3px solid red;
+z-index: 2;
+color: white;
+background-color: rgba(0,0,0,.1);
+right: 0;
+margin-right: 20%;
+font-size: 2em;
+}
+
+#instructions{
+font-size: 2em;
+}
