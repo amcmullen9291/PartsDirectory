@@ -28,7 +28,8 @@ return (
     <div id="mainBottom">
         <div>
         <hr/>
-        <center><button id="button1" type="button" disabled ><b>【﻿ＴＯＯＬ　ＢＯＸ】</b></button></center>
+        <center><button id="button1" type="button" disabled ><b>【﻿ＴＯＯＬ　ＢＯＸ】
+        </b></button></center>
         </div>
     </div>
     </div>
