@@ -128,7 +128,6 @@ margin: 5%;
 color: black;
 }
 
-
 #carouselBlog{
 right:0;
 top:0;
@@ -183,6 +182,7 @@ font-size: 18px;
     border: 10px solid #0065A6;
     outline: none;
     transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
+    font-size: 24px;
   }
 
   #roundButton:hover {
@@ -205,4 +205,45 @@ overflow-x: hidden;
 position: relative;
     overflow: hidden;
 visibility: hidden;
+}
+
+#slide:focus, #slide:hover {
+  animation: wobble 1s 1;
+}
+
+@keyframes wobble {
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#inventoryTable{
+position: fixed;
+margin-left: 25%;
+top: 0;
+margin-top: 25vh;
+height: 500px;
+width: 60vw;
+
+border: 20px solid #9A807C;
+border-style: outset;
+background-color: #A57164;
+  height:450px;
+   overflow-y:scroll;
+   display:block;
+   margin-left: 25%;
+   margin-right: 25%;
+   margin-bottom: 5%;
+  color: #30381A;
+  font-size: 20px;
+  scrollbar-color: initial;
 }

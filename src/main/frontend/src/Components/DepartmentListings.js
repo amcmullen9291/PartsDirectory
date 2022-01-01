@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import MenuButton from './MenuButton';
 
-export var departmentName;
+export var department;
 
 function DepartmentListings() {
   const [inventory, setInventory] = useState(null);
@@ -46,6 +46,23 @@ return (
 <div>
 <MenuButton/>
 </div>
+    {inventory && (
+      <div><table id="inventoryTable">
+        <thead>
+        </thead>
+        <tbody>
+        {inventory.map((item, index) => (
+          <div key={index}>
+            <tr>
+            <td><img src={`${process.env.PUBLIC_URL}/InventoryPics/${item.image}`} alt="Image1" /></td><td className="name">{item.partName}</td><td className="spacer"></td><td className="breed">({item.department})</td>
+            </tr>
+          </div>
+        ))}
+        </tbody>
+</table>
+        <center><span>Click on a group name to see filtered lists </span></center>
+      </div>
+    )}
 </>
 )
 }

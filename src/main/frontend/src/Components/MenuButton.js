@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import DropdownMenu from './DropdownMenu';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
-var visibility = "";
 class MenuButton extends Component {
 
 constructor(props, context) {
@@ -24,12 +22,17 @@ toggleMenu() {
   window.visibility = !window.visibility;
   console.log("Visibility: ", window.visibility);
   if(window.visibility === true){
+  let buttonText = document.getElementById('roundButton');
+  buttonText.innerHTML = "";
   let menu = document.getElementById('menuArea');
   menu.style.visibility = 'visible';
   }
     if(window.visibility === false){
   let menu = document.getElementById('menuArea');
   menu.style.visibility = 'hidden';
+      setTimeout(() => {  let buttonText = document.getElementById('roundButton');
+      buttonText.innerHTML = "Sort Results by Department Again"; }, 2000);
+
     }
 }
   render() {
@@ -41,10 +44,10 @@ toggleMenu() {
 
     return (
     <>
-      <button id="roundButton" onClick={this.toggleMenu}> Departments</button>
+      <button id="roundButton" onClick={this.toggleMenu}> Sort Results by Department</button>
       <div id="menuArea">
       <div id="slide">
-        <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />;
+        <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
       </div>
       </div>
      </>
