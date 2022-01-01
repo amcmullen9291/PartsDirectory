@@ -1,6 +1,7 @@
 package com.parts_directory.Model;
 
 import javax.persistence.*;
+import java.util.Random;
 
 @Entity
 @Table(name = "inventory")
@@ -32,11 +33,11 @@ public class Part {
 
     public Part(){}
 
-    public Part(String partName, String manufacturer, String partNumber, String department, int aisleNumber, float price, String image){
+    public Part(String partName, String manufacturer, String department, int aisleNumber, float price, String image){
         this.aisleNumber = aisleNumber;
         this.manufacturer = manufacturer;
         this.partName = partName;
-        this.partNumber = partNumber;
+        this.partNumber = generatePartsNumber();
         this.department = department;
         this.price = price;
         this.image = image;
@@ -102,5 +103,20 @@ public class Part {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String generatePartsNumber() {
+        int leftLimit = 48; // numeral '0'
+        int rightLimit = 122; // letter 'z'
+        int targetStringLength = 10;
+        Random random = new Random();
+
+        String generatedString = random.ints(leftLimit, rightLimit + 1)
+                .filter(i -> (i <= 57 || i >= 65) && (i <= 90 || i >= 97))
+                .limit(targetStringLength)
+                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
+                .toString();
+
+        return generatedString;
     }
 }
