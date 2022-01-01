@@ -1,15 +1,62 @@
-function DepartmentListings(){
-return (
-    <>
-<div>
-<center><h1>Departments</h1></center>
-</div>
-        <center><a href={"/"}>Return to Main Menu</a></center>
-        <br/>
-        <hr/><br/>
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-   </>
-    )
+
+export var puppyID;
+export var puppyBreed;
+
+function DepartmentListings() {
+
+  const [inventory, setInventory] = useState(null);
+const INVENTORY_LIST_URL = "http://localhost:8080/toolbox/inventory";
+  useEffect(() => {
+    getInventory();
+
+    async function getInventory() {
+      const response = await fetch(INVENTORY_LIST_URL);
+      const data = await response.json();
+      setInventory(data) ;
+      console.log(data);
+    }
+  }, []);
+
+  function selectedBreed(e, breedName, id){
+    e.preventDefault();
+    console.log("Breed param: ", breedName);
+    console.log("ID param: ", id);
+    window.puppyID = id;
+    window.puppyBreed = breedName;
+  }
+
+  function resetList(e){
+          e.preventDefault();
+          let button = document.getElementById("resetButton");
+          window.location.reload();
+          button.style.visibility = "hidden";
+          console.log("page resetting");
+        }
+
+return (
+<>
+<div><center>Place Holder</center></div>
+</>
+)
 }
 
-export default DepartmentListings;
+const mapStateToProps = (state) => {
+    return {
+      Breed: state.Breed
+    }
+
+  }
+
+   const mapDispatchToProps = (dispatch) => {
+     return{
+       Residents: (breed) => { dispatch({type: 'SELECTED_BREEDS', breed})}
+     }
+   }
+
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(DepartmentListings);

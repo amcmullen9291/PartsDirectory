@@ -7,10 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface InventoryRepository extends JpaRepository<Part, Long> {
-
-    @Override
-    List<Part> findAll();
+public interface PartsRepository extends JpaRepository<Part, Long> {
 
     List<Part> findByPartNumber(String partNumber);
 

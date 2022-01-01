@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Random;
 
 @Entity
-@Table(name = "inventory")
+@Table(name = "parts")
 public class Part {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,16 +31,20 @@ public class Part {
     @Column(name = "image")
     private String image;
 
+    @Column(name = "alt")
+    private String alt;
+
     public Part(){}
 
-    public Part(String partName, String manufacturer, String department, int aisleNumber, float price, String image){
+    public Part(String partName, String manufacturer,String partNumber, String department, int aisleNumber, float price, String image, String alt){
         this.aisleNumber = aisleNumber;
         this.manufacturer = manufacturer;
         this.partName = partName;
-        this.partNumber = generatePartsNumber();
+        this.partNumber = partNumber;
         this.department = department;
         this.price = price;
         this.image = image;
+        this.alt = alt;
     }
 
     public long getId() {
@@ -103,6 +107,14 @@ public class Part {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getAlt() {
+        return alt;
+    }
+
+    public void setAlt(String alt) {
+        this.alt = alt;
     }
 
     public String generatePartsNumber() {
