@@ -2,9 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-//
-//export var puppyID;
-//export var puppyBreed;
+import DropdownMenu from './DropdownMenu';
 
 function DepartmentListings() {
 
@@ -40,6 +38,10 @@ const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
 return (
 <>
 <div><center>Place Holder</center></div>
+
+<div>
+<DropdownMenu/>
+</div>
 </>
 )
 }
