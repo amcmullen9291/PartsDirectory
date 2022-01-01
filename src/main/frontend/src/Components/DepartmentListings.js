@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-
-export var puppyID;
-export var puppyBreed;
+//
+//export var puppyID;
+//export var puppyBreed;
 
 function DepartmentListings() {
 
   const [inventory, setInventory] = useState(null);
-const INVENTORY_LIST_URL = "http://localhost:8080/toolbox/inventory";
+const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
   useEffect(() => {
     getInventory();
 
@@ -46,14 +46,14 @@ return (
 
 const mapStateToProps = (state) => {
     return {
-      Breed: state.Breed
+      Inventory: state.Inventory
     }
 
   }
 
    const mapDispatchToProps = (dispatch) => {
      return{
-       Residents: (breed) => { dispatch({type: 'SELECTED_BREEDS', breed})}
+       Inventory: (inventory) => { dispatch({type: 'SELECTED_INVENTORY', inventory})}
      }
    }
 
