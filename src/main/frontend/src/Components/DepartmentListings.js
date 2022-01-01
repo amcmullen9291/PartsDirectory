@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import DropdownMenu from './DropdownMenu';
+import MenuButton from './MenuButton';
+
+export var departmentName;
 
 function DepartmentListings() {
-
   const [inventory, setInventory] = useState(null);
 const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
   useEffect(() => {
@@ -19,12 +20,11 @@ const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
     }
   }, []);
 
-  function selectedBreed(e, breedName, id){
+
+  function selectedDepartment(e, departmentName, id){
     e.preventDefault();
-    console.log("Breed param: ", breedName);
-    console.log("ID param: ", id);
-    window.puppyID = id;
-    window.puppyBreed = breedName;
+    console.log("Department: ", departmentName);
+    window.department = departmentName;
   }
 
   function resetList(e){
@@ -37,10 +37,14 @@ const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
 
 return (
 <>
-<div><center>Place Holder</center></div>
-
+   <div>
+    <center><h1>Toolbox</h1></center>
+    </div>
+    <center><a href={"/"} id="returnHomeLink">Return to Main Menu</a></center>
+    <br/>
+    <hr/><br/>
 <div>
-<DropdownMenu/>
+<MenuButton/>
 </div>
 </>
 )

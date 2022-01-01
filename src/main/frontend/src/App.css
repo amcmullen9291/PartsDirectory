@@ -165,6 +165,9 @@ font-size: 18px;
   padding: 25px;
   margin: 0;
   overflow: auto;
+  width: 15vw;
+  height: 25vw;
+  margin-left: 2%;
   }
 
   #container li {
@@ -193,3 +196,13 @@ font-size: 18px;
     border-color: #003557;
     background-color: #FFF;
   }
+
+#menuArea{
+width: 20vw;
+height: 50vh;
+overflow-y: hidden;
+overflow-x: hidden;
+position: relative;
+    overflow: hidden;
+visibility: hidden;
+}
