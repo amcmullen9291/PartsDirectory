@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
+import DepartmentListings from './DepartmentListings';
 
 class MenuButton extends Component {
 
@@ -8,12 +9,11 @@ constructor(props, context) {
   super(props, context);
 
   this.state = {
-    visible: true
+    visible: true,
   };
 
   this.toggleMenu = this.toggleMenu.bind(this);
 }
-
 
 toggleMenu() {
   this.setState({
@@ -35,6 +35,16 @@ toggleMenu() {
 
     }
 }
+
+   sortByDepartment(e){
+    const newList = DepartmentListings.inventory.filter(item=> item.department === e.target.value);
+            console.log("Department:", e.target.value);
+            console.log("New List:", newList);
+            DepartmentListings.setInventory(newList);
+    }
+
+handleChange(value) {console.log("Department: ", value.value);}
+
   render() {
 
   const options = [
@@ -47,7 +57,7 @@ toggleMenu() {
       <button id="roundButton" onClick={this.toggleMenu}> Sort Results by Department</button>
       <div id="menuArea">
       <div id="slide">
-        <Dropdown id="DepartmentsLists" options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
+        <Dropdown id="DepartmentsLists" options={options} onChange={this.handleChange} value={this.state.selected} onClick={(e) => {this.sortByDepartment(e)}} placeholder="Select an option" />
       </div>
       </div>
      </>

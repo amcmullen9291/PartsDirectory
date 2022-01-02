@@ -21,12 +21,6 @@ const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
   }, []);
 
 
-  function selectedDepartment(e, departmentName, id){
-    e.preventDefault();
-    console.log("Department: ", departmentName);
-    window.department = departmentName;
-  }
-
   function resetList(e){
           e.preventDefault();
           let button = document.getElementById("resetButton");
