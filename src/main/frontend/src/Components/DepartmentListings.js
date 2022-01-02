@@ -17,18 +17,27 @@ const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
     }
   }, []);
 
+  async function ReturnList(e) {
+    e.preventDefault();
 
-  function resetList(e){
-          e.preventDefault();
-          let button = document.getElementById("resetButton");
-          window.location.reload();
-          button.style.visibility = "hidden";
-          console.log("page resetting");
-        }
+    document.getElementById("roundButton2").style.visibility = 'hidden';
+    document.getElementById("roundButton").style.visibility = 'visible';
+    const response = await fetch(INVENTORY_LIST_URL);
+    const data = await response.json();
+    setInventory(data) ;
 
-        function sortByDepartment(e, departmentName){
-        e.preventDefault()
+  }
+
+
+        function SortByDepartment(e, departmentName){
+        e.preventDefault();
+        console.log("Sort function working");
+         document.getElementById("roundButton").style.visibility = 'hidden';
+         document.getElementById("roundButton2").style.visibility = 'visible';
         console.log("Chosen Dept: ", departmentName);
+         const newList = inventory.filter(item => item.department === departmentName);
+         console.log("New List:", newList);
+         setInventory(newList);
         }
 
 return (
@@ -44,15 +53,17 @@ return (
 <div class="dropdown">
       <button class="dropbtn" id="roundButton"> Sort Results by Department</button>
   <div class="dropdown-content" id="slide">
-    <span onClick={(e) => {sortByDepartment(e, "Lumber")}} className="listShades">Lumber</span>
-    <a href="#" onClick={(e) => {sortByDepartment(e, "Garden")}}>Garden</a>
-    <span onClick={(e) => {sortByDepartment(e, "Bathrooms")}} className="listShades">Bathrooms</span>
-    <a href="#" onClick={(e) => {sortByDepartment(e, "Kitchen")}}>Kitchen</a>
-    <span href="#" onClick={(e) => {sortByDepartment(e, "Small Tools & Accessories")}} className="listShades">Small Tools & Accessories</span>
-    <a href="#" onClick={(e) => {sortByDepartment(e, "Home")}}>Home</a>
-    <span onClick={(e) => {sortByDepartment(e, "Paints")}} className="listShades">Paints</span>
+    <span onClick={(e) => {SortByDepartment(e, "Lumber")}} className="listShades">Lumber</span>
+    <a href={"#"} onClick={(e) => {SortByDepartment(e, "Garden")}}>Garden</a>
+    <span onClick={(e) => {SortByDepartment(e, "Bathrooms")}} className="listShades">Bathrooms</span>
+    <a href={"#"} onClick={(e) => {SortByDepartment(e, "Kitchen")}}>Kitchen</a>
+    <span href="#" onClick={(e) => {SortByDepartment(e, "Small Tools & Accessories")}} className="listShades">Small Tools & Accessories</span>
+    <a to={"#"} onClick={(e) => {SortByDepartment(e, "Home")}}>Home</a>
+    <span onClick={(e) => {SortByDepartment(e, "Paints")}} className="listShades">Paints</span>
   </div>
 </div>
+      <button class="dropbtn" id="roundButton2" onClick={(e) => {ReturnList(e)}}> Return Full List</button>
+
 </div>
     {inventory && (
       <div><table id="inventoryTable">
