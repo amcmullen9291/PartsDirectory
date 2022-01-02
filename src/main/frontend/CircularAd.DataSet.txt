@@ -1,0 +1,25 @@
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Backpack", "UU5UAEQJB", "ToolBox", "6", "Home", "29.00", "backpack.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Puppy Backpack", "N0105SCTD", "ToolBox", "6", "Home", "34.00", "dogBackpack.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Manilla Folders", "9TCM7HSSG", "ToolBox", "6", "Home", "1.57", "folders.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Pencils - 10pc", "XCJWMLU9C", "ToolBox", "6", "Home", "2.15", "pencils.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Car Mat Set", "31XW6G884", "ToolBox", "6", "Home", "28.00", "carMat.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Vacuum Cleaner", "1OXIVB1QW", "ToolBox", "6", "Home", "56.02", "vacuum.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Spackling", "0F82HOHL4", "ToolBox", "5", "Paints", "21.97", "spackling.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Wall/Ceiling Paint", "39E72F431", "ToolBox", "5", "Paints", "18.63", "paint.jpg" );
+-------------------------------DONE
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Wooden Fence Set", "6UX5YV1AF", "ToolBox", "19", "Garden", "218.63", "Fence.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Leaf Blower", "WL4ITFD47", "ToolBox", "19", "Garden", "70.63", "leafBlower.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Duct Tape", "KA65O76OR", "ToolBox", "4", "Small Tools & Accessories", "4.80", "ductTape.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "DryWall", "OHCDUDT7T", "ToolBox", "19", "Lumber", "7.23", "Drywall.jpg" );
+--------------------------DONE
