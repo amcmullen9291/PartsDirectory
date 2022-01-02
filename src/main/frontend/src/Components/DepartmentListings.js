@@ -42,6 +42,7 @@ return (
     </div>
     <center><a href={"/"} id="returnHomeLink">Return to Main Menu</a></center>
     <br/>
+        <center><span id="info1">Prices available in-store and online!</span></center>
     <hr/><br/>
 <div>
 <MenuButton/>

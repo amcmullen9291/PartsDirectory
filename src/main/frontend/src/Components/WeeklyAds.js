@@ -20,6 +20,7 @@ return (
     </div>
     <center><a href={"/"} id="returnHomeLink">Return to Main Menu</a></center>
     <br/>
+    <center><span id="info1">Listed prices available for online purchases</span></center>
     <hr/><br/>
 	<div style={{ display: 'block', height: 500, width: 500, padding: 30 }}>
 	<h3>{currentDate}</h3>

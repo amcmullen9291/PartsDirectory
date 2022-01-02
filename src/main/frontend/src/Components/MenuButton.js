@@ -38,7 +38,7 @@ toggleMenu() {
   render() {
 
   const options = [
-    'Kitchen', 'Small Tools & Accessories', 'Bathrooms', 'Garden', 'Lumber'
+    'Kitchen', 'Small Tools & Accessories', 'Bathrooms', 'Garden', 'Lumber', 'Home', 'Paints'
   ];
   const defaultOption = options[0];
 
@@ -47,7 +47,7 @@ toggleMenu() {
       <button id="roundButton" onClick={this.toggleMenu}> Sort Results by Department</button>
       <div id="menuArea">
       <div id="slide">
-        <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
+        <Dropdown id="DepartmentsLists" options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
       </div>
       </div>
      </>
