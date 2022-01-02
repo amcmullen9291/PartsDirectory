@@ -126,11 +126,11 @@ INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, departme
 
 INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint", "UKRSSXS2N", "ToolBox", "5", "Paints", "24.00", "KitchenPaint.jpg" );
 
-INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint", "ITY2J1XZ0", "ToolBox", "5", "Paints", "34.00", "EnamelPrimer.jpg" );
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Enamel Paint", "ITY2J1XZ0", "ToolBox", "5", "Paints", "34.00", "EnamelPrimer.jpg" );
 
-INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint", "YSEZBTIT2", "ToolBox", "5", "Paints", "50.28", "Paint&Primer.jpg" );
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Paint & Primer", "YSEZBTIT2", "ToolBox", "5", "Paints", "50.28", "Paint&Primer.jpg" );
 
-INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint", "Y1H0YQZTV", "ToolBox", "5", "Paints", "19.00", "PurplePaint.jpg" );
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint - Purple", "Y1H0YQZTV", "ToolBox", "5", "Paints", "19.00", "PurplePaint.jpg" );
 
-INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint", "8QRZFFVVO", "ToolBox", "5", "Paints", "29.00", "RedPaint.jpg" );
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint - Red", "8QRZFFVVO", "ToolBox", "5", "Paints", "29.00", "RedPaint.jpg" );
 ----------------------DONE
