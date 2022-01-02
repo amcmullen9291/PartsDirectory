@@ -2,12 +2,9 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import MenuButton from './MenuButton';
-
-export var department;
-
 function DepartmentListings() {
   const [inventory, setInventory] = useState(null);
+
 const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
   useEffect(() => {
     getInventory();
@@ -29,6 +26,11 @@ const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
           console.log("page resetting");
         }
 
+        function sortByDepartment(e, departmentName){
+        e.preventDefault()
+        console.log("Chosen Dept: ", departmentName);
+        }
+
 return (
 <>
    <div>
@@ -39,7 +41,18 @@ return (
         <center><span id="info1">Prices available in-store and online!</span></center>
     <hr/><br/>
 <div>
-<MenuButton/>
+<div class="dropdown">
+      <button class="dropbtn" id="roundButton"> Sort Results by Department</button>
+  <div class="dropdown-content" id="slide">
+    <span onClick={(e) => {sortByDepartment(e, "Lumber")}} className="listShades">Lumber</span>
+    <a href="#" onClick={(e) => {sortByDepartment(e, "Garden")}}>Garden</a>
+    <span onClick={(e) => {sortByDepartment(e, "Bathrooms")}} className="listShades">Bathrooms</span>
+    <a href="#" onClick={(e) => {sortByDepartment(e, "Kitchen")}}>Kitchen</a>
+    <span href="#" onClick={(e) => {sortByDepartment(e, "Small Tools & Accessories")}} className="listShades">Small Tools & Accessories</span>
+    <a href="#" onClick={(e) => {sortByDepartment(e, "Home")}}>Home</a>
+    <span onClick={(e) => {sortByDepartment(e, "Paints")}} className="listShades">Paints</span>
+  </div>
+</div>
 </div>
     {inventory && (
       <div><table id="inventoryTable">
@@ -71,7 +84,7 @@ const mapStateToProps = (state) => {
 
    const mapDispatchToProps = (dispatch) => {
      return{
-       Inventory: (inventory) => { dispatch({type: 'SELECTED_INVENTORY', inventory})}
+       Inventory: (inventory) => { dispatch({type: 'SELECTED_INVENTORY', inventory})},
      }
    }
 

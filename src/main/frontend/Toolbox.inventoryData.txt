@@ -113,11 +113,11 @@ INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, departme
 INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "11 pc Socket Set", "HZXM7LMOW","Ace", "4", "Small Tools & Accessories", "24.90", "sockets4.jpg" );
 -----------------------DONE
 
-INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "125pc ToolBox", "961RVZCJH","Ace", "1", "ToolBox Kits", "125.90", "Toolbox1.jpg" );
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "125pc ToolBox", "961RVZCJH","Ace", "1", "Small Tools & Accessories", "125.90", "Toolbox1.jpg" );
 
-INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "75pc ToolBox", "W3G3ZXUB1","Ace", "1", "ToolBox Kits", "80.90", "Toolbox2.jpg" );
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "75pc ToolBox", "W3G3ZXUB1","Ace", "1", "Small Tools & Accessories", "80.90", "Toolbox2.jpg" );
 
-INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "13pc ToolBox", "W9E6HB60H","Ace", "1", "ToolBox Kits", "59.90", "Toolbox3.jpg" );
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "13pc ToolBox", "W9E6HB60H","Ace", "1", "Small Tools & Accessories", "59.90", "Toolbox3.jpg" );
 
 INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "StandardPineBoard - 1X4", "BC0YOD6KO", "ToolBox", "19", "Lumber", "13.00", "StandardPineBoard1X4.jpg" );
 

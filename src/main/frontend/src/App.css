@@ -248,13 +248,11 @@ background-color: #A57164;
   scrollbar-color: initial;
 }
 
-/* Works on Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: blue orange;
 }
 
-/* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 18px;
 }
@@ -270,7 +268,7 @@ background-color: #A57164;
 }
 
 #DetailsPage{
-    padding: 0 230px 0 0; /* Set the second value to the width of the navigation frame */
+    padding: 0 230px 0 0;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -300,13 +298,13 @@ background-color: #A57164;
     position: fixed;
     top: 0;
     left: 0;
-    right: 230px; /* Set this to the width of the navigation frame */
+    right: 230px;
     bottom: 0;
     overflow: auto;
 }
 
 .innertube{
-    margin: 15px; /* Provides padding for the content */
+    margin: 15px;
 }
 
 #DetailsNav{
@@ -314,9 +312,9 @@ background-color: #A57164;
     top: 0;
     bottom: 0;
     left: 0;
-    width: 230px; /* Width of navigation frame */
+    width: 230px;
     height: 100%;
-    overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+    overflow: hidden;
     background: #eee;
 }
 
@@ -332,3 +330,32 @@ margin-top: 15%;
 color: white;
 font-size: 18px;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  margin-left: 15%;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 20vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+.listShades:hover {background-color: #ddd;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
