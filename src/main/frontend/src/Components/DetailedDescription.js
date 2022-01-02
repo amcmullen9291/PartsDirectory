@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import Button from 'react-bootstrap/Button';
 
 function DetailedDescription() {
+
   const [inventory, setInventory] = useState(null);
 const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
   useEffect(() => {
@@ -16,39 +17,27 @@ const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
     }
   }, []);
 
+console.log("inventory list: ", inventory);
 
-  function selectedDepartment(e, departmentName, id){
-    e.preventDefault();
-    console.log("Department: ", departmentName);
-    window.department = departmentName;
-  }
-
-  function resetList(e){
-          e.preventDefault();
-          let button = document.getElementById("resetButton");
-          window.location.reload();
-          button.style.visibility = "hidden";
-          console.log("page resetting");
-        }
-
+function blockade(e){
+e.preventDefault();
+console.log("Span is working");
+}
 return (
 <>
-   <div>
-    <center><h1>Toolbox</h1></center>
+    <div>
+    <center><h1>The Circular</h1></center>
     </div>
-    <center><a href={"/"} id="returnHomeLink">Return to Main Menu</a></center>
+    <center><a href={"/Parts/Departments"} id="returnHomeLink">Return to Full Listings</a></center>
     <br/>
-    <hr/><br/>
-<div id="DetailsPage">
-<main id="DetailsMain">
-			<div className="innertube">
-			<div id="DetailsPictureArea">
-			<center>Picture will go here.</center>
-			</div>
-			</div>
-		</main>
+    <hr/>
+    <div><span><center><img
 
-		<nav id="DetailsNav">
+                                       className="carouselPics"
+                           src={`${process.env.PUBLIC_URL}/InventoryPics/dogBackpack.jpg`}
+                                       alt="Circular"
+                                   /></center></span></div>
+    <nav id="DetailsNav">
 			<div className="innertube">
 
 			<h3 id="DetailedInfoList">Item Name</h3>
@@ -66,7 +55,6 @@ return (
 			</ul>
 			</div>
 		</nav>
-</div>
 </>
 )
 }
@@ -78,12 +66,6 @@ const mapStateToProps = (state) => {
 
   }
 
-   const mapDispatchToProps = (dispatch) => {
-     return{
-       Inventory: (inventory) => { dispatch({type: 'SELECTED_INVENTORY', inventory})}
-     }
-   }
 
 
-
-export default connect(mapStateToProps, mapDispatchToProps)(DetailedDescription);
+export default connect(mapStateToProps, null)(DetailedDescription);

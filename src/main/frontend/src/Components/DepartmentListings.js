@@ -53,13 +53,13 @@ return (
 <div class="dropdown">
       <button class="dropbtn" id="roundButton"> Sort Results by Department</button>
   <div class="dropdown-content" id="slide">
-    <span onClick={(e) => {SortByDepartment(e, "Lumber")}} className="listShades">Lumber</span>
-    <a href={"#"} onClick={(e) => {SortByDepartment(e, "Garden")}}>Garden</a>
-    <span onClick={(e) => {SortByDepartment(e, "Bathrooms")}} className="listShades">Bathrooms</span>
-    <a href={"#"} onClick={(e) => {SortByDepartment(e, "Kitchen")}}>Kitchen</a>
-    <span href="#" onClick={(e) => {SortByDepartment(e, "Small Tools & Accessories")}} className="listShades">Small Tools & Accessories</span>
-    <a to={"#"} onClick={(e) => {SortByDepartment(e, "Home")}}>Home</a>
-    <span onClick={(e) => {SortByDepartment(e, "Paints")}} className="listShades">Paints</span>
+    <button onClick={(e) => {SortByDepartment(e, "Lumber")}} className="listShades">Lumber</button>
+    <button onClick={(e) => {SortByDepartment(e, "Garden")}}>Garden</button>
+    <button onClick={(e) => {SortByDepartment(e, "Bathrooms")}} className="listShades">Bathrooms</button>
+    <button onClick={(e) => {SortByDepartment(e, "Kitchen")}}>Kitchen</button>
+    <button onClick={(e) => {SortByDepartment(e, "SmallTools&Accessories")}} className="listShades">Small Tools & Accessories</button>
+    <button onClick={(e) => {SortByDepartment(e, "Home")}}>Home</button>
+    <button onClick={(e) => {SortByDepartment(e, "Paints")}} className="listShades">Paints</button>
   </div>
 </div>
       <button class="dropbtn" id="roundButton2" onClick={(e) => {ReturnList(e)}}> Return Full List</button>
@@ -73,13 +73,12 @@ return (
         {inventory.map((item, index) => (
           <div key={index}>
             <tr>
-            <td><img src={`${process.env.PUBLIC_URL}/InventoryPics/${item.image}`} alt="Image1" /></td><td className="name">{item.partName}</td><td className="spacer"></td><td className="breed">({item.department})</td>
+            <td><Link to={`/Parts/inventory/${item.department}/${item.partNumber}`}><img src={`${process.env.PUBLIC_URL}/InventoryPics/${item.image}`} alt="Image1" /></Link></td><td className="name">{item.partName}</td><td className="spacer"></td><td className="breed">({item.department})</td>
             </tr>
           </div>
         ))}
         </tbody>
 </table>
-        <center><span>Click on a group name to see filtered lists </span></center>
       </div>
     )}
 </>
