@@ -20,7 +20,7 @@ return (
     </div>
     <center><a href={"/"} id="returnHomeLink">Return to Main Menu</a></center>
     <br/>
-    <center><span id="info1">Listed prices available for online purchases</span></center>
+    <center><span id="info1">Listed prices are available for online purchases</span></center>
     <hr/><br/>
 	<div style={{ display: 'block', height: 500, width: 500, padding: 30 }}>
 	<h3>{currentDate}</h3>
@@ -30,7 +30,7 @@ return (
 		<img
 
 			className="carouselPics"
-src={`${process.env.PUBLIC_URL}/CircularPics/backpack.jpg`}
+src={`${process.env.PUBLIC_URL}/InventoryPics/backpack.jpg`}
 			alt="Circular"
 		/>
 		<img
@@ -59,7 +59,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode1.jpg`}
         		<img
 
         			id="carouselPics"
-        src={`${process.env.PUBLIC_URL}/CircularPics/carMat.jpg`}
+        src={`${process.env.PUBLIC_URL}/InventoryPics/carMat.jpg`}
         			alt="Circular"
         		/>
         		<img
@@ -76,7 +76,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode1.jpg`}
             <img
 
                 className="carouselPics"
-    src={`${process.env.PUBLIC_URL}/CircularPics/dogBackpack.jpg`}
+    src={`${process.env.PUBLIC_URL}/InventoryPics/dogBackpack.jpg`}
                 alt="Circular"
             />
     <img
@@ -93,7 +93,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode3.jpg`}
              <img
 
                  className="carouselPics"
-     src={`${process.env.PUBLIC_URL}/CircularPics/Drywall.jpg`}
+     src={`${process.env.PUBLIC_URL}/InventoryPics/Drywall.jpg`}
                  alt="Circular"
              />
              <img
@@ -110,7 +110,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode3.jpg`}
               <img
 
                   id="carouselPics"
-      src={`${process.env.PUBLIC_URL}/CircularPics/ductTape.jpg`}
+      src={`${process.env.PUBLIC_URL}/InventoryPics/ductTape.jpg`}
                   alt="Circular"
               />
               <img
@@ -127,7 +127,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode3.jpg`}
                <img
 
                    id="carouselPics"
-       src={`${process.env.PUBLIC_URL}/CircularPics/Fence.jpg`}
+       src={`${process.env.PUBLIC_URL}/InventoryPics/Fence.jpg`}
                 alt="Circular"
                />
                <img
@@ -144,7 +144,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode3.jpg`}
                <img
 
                    id="carouselPics"
-       src={`${process.env.PUBLIC_URL}/CircularPics/folders.jpg`}
+       src={`${process.env.PUBLIC_URL}/InventoryPics/folders.jpg`}
                 alt="Circular"
                />
                <img
@@ -161,7 +161,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode3.jpg`}
                <img
 
                    id="carouselPics"
-       src={`${process.env.PUBLIC_URL}/CircularPics/leafBlower.jpg`}
+       src={`${process.env.PUBLIC_URL}/InventoryPics/leafBlower.jpg`}
                 alt="Circular"
                />
                <img
@@ -178,7 +178,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode3.jpg`}
                <img
 
                    id="carouselPics"
-       src={`${process.env.PUBLIC_URL}/CircularPics/paint.jpg`}
+       src={`${process.env.PUBLIC_URL}/InventoryPics/paint.jpg`}
                 alt="Circular"
                />
                <img
@@ -195,7 +195,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode3.jpg`}
                <img
 
                    id="carouselPics"
-       src={`${process.env.PUBLIC_URL}/CircularPics/pencils.jpg`}
+       src={`${process.env.PUBLIC_URL}/InventoryPics/pencils.jpg`}
                 alt="Circular"
                />
                <img
@@ -212,7 +212,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode3.jpg`}
                <img
 
                    id="carouselPics"
-       src={`${process.env.PUBLIC_URL}/CircularPics/spackling.jpg`}
+       src={`${process.env.PUBLIC_URL}/InventoryPics/spackling.jpg`}
                 alt="Circular"
                />
                <img
@@ -229,7 +229,7 @@ src={`${process.env.PUBLIC_URL}/BarCodes/barCode3.jpg`}
                <img
 
                    id="carouselPics"
-       src={`${process.env.PUBLIC_URL}/CircularPics/vacuum.jpg`}
+       src={`${process.env.PUBLIC_URL}/InventoryPics/vacuum.jpg`}
                 alt="Circular"
                />
                <img
