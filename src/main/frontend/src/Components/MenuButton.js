@@ -38,7 +38,7 @@ toggleMenu() {
   render() {
 
   const options = [
-    'Kitchen', 'Small Tools & Appliances', 'Bathroom', 'Garden', 'Lumber'
+    'Kitchen', 'Small Tools & Accessories', 'Bathrooms', 'Garden', 'Lumber'
   ];
   const defaultOption = options[0];
 

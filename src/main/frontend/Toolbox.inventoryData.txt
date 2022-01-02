@@ -1,0 +1,136 @@
+55 rows total: 
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "1X4 Pine Board", "ZRJOXUIIM", "ToolBox", "19", "Lumber", "13.00", "1X4PineRidged.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "1X10 Pine Board", "ZPJONUIIM","ToolBox", "19", "Lumber", "18.00", "1X4PineRidged.jpg" );
+
+--------------------------------------DONE
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "1X8 Cedar", "838P7P3F8","ToolBox", "19", "Lumber", "24.00", "1X8cedarTreated.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "1X12 MDF", "DBQTR0X8G","ToolBox", "19", "Lumber", "16.00", "1X12MDFBoard.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "2X4 Douglas Fir", "XICGZDBG4","ToolBox", "19", "Lumber", "21.00", "2x4_Doug_Fir_New.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Apple Tree", "JV6OX53P2","ToolBox", "19", "Garden", "6.00", "appleTree.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Black Plastic Lumber", "0266U7FAB","ToolBox", "19", "Lumber", "12.50", "blackPlasticLumber.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Blueberry Shrub", "2X0JFZ46K","ToolBox", "19", "Garden", "7.95", "blueBerryShrub.jpg" );
+
+----------------------------------------------------------DONE
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Box Cutter- plastic", "QIOLW9RLD","Ace", "4", "Small Tools & Accessories", "2.95", "BoxCutter1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Box Cutter - long", "02SJUJA8Q","Ace", "4", "Small Tools & Accessories", "5.95", "BoxCutter2.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Box Cutter - medium", "CQ61TGK3Y","Ace", "4", "Small Tools & Accessories", "4.95", "BoxCutter3.jpg" );
+
+-------------------------------------DONE
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Box Cutter Blade, "JCAKBX227","Ace", "4", "Small Tools & Accessories", "2.95", "BoxCutterBlade1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Box Cutter Blade - long", "HSK68CUEA","Ace", "4", "Small Tools & Accessories", "2.95", "BoxCutterBlade2.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Brown Plastic Lumber", "ZHDL4YY7H","ToolBox", "19", "Lumber", "14.00", "brownPlasticLumber.jpg" );
+
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Cabinet Knob - square", "U3FGBYFZP","ToolBox", "2", "Kitchen", "6.00", "cabinetknob1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Cabinet Knob - metal", "0P7R9TZ8N","ToolBox", "2", "Kitchen", "8.00", "cabinetknob2.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Cabinet Knob - glossy", "XL36OWARV","ToolBox", "2", "Kitchen", "8.00", "cabinetknob3.jpg" );
+-----------------------------------DONE
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Cap Nail - blue", "FY02BU7GS","Ace", "4", "Small Tools & Accessories", "1.39", "capNails.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Cedar Plastic Lumber", "VRL6RB7GD","ToolBox", "19", "Lumber", "9.00", "cedarPlasticLumber.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Compost Bag", "S6UKYYH5Q","ToolBox", "19", "Garden", "8.99", "compost.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Facet- modern", "PUGFRI8IW","ToolBox", "2", "Kitchen", "23.00", "faucet1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Facet- short", "02BRMAQEC","ToolBox", "2", "Kitchen", "18.00", "faucet2.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Facet- long", "S9W5GV1ZW","ToolBox", "2", "Kitchen", "24.00", "faucet3.jpg" );
+-------------------------------------DONE
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "fertilizer", "C0N8JGP4D","ToolBox", "19", "Garden", "28.99", "fertilizer.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Framing Lumber", "QCIWLDPD5","ToolBox", "19", "Lumber", "21.00", "framingLumber_2x4.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Grass Seed", "BKSTYL3PR","ToolBox", "19", "Garden", "25.99", "grassSeed.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Hammer - wooden", "MLNWGGK91","Ace", "4", "Small Tools & Accessories", "5.95", "Hammer1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Hammer - metal", "40WYYSJAZ","Ace", "4", "Small Tools & Accessories", "7.95", "Hammer2.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Hammer - plastic", "VYOH2WACX","Ace", "4", "Small Tools & Accessories", "6.95", "Hammer3.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Hammer - long", "0PQS9HUSR","Ace", "4", "Small Tools & Accessories", "5.95", "Hammer4.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Hammer - yellow plastic", "4OC2ORPM2","Ace", "4", "Small Tools & Accessories", "6.95", "Hammer5.jpg" );
+------------------------DONE
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitcher Drawer Handle - classic", "TFCAWLR9I","ToolBox", "2", "Kitchen", "14.00", "kitchendrawer1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitcher Drawer Handle - round", "VVXN4O393","ToolBox", "2", "Kitchen", "19.00", "kitchendrawer2.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitcher Drawer Handle - bar", "J1IGMYQ8P","ToolBox", "2", "Kitchen", "24.00", "kitchendrawer3.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Lilac Shrub", "OXJ70HZMX","ToolBox", "19", "Garden", "45.99", "lilacShrub.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Wood Nails", "6872IKVQC","Ace", "4", "Small Tools & Accessories", ".75", "nail1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Box Nails", "HSC85ZW9L","Ace", "4", "Small Tools & Accessories", ".95", "nail1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Roofing Nails", "QVKE1HHYB","Ace", "4", "Small Tools & Accessories", "1.25", "nail1.jpg" );
+---------------------------DONE
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Plant Food", "NOICOJF5X","ToolBox", "19", "Garden", "6.99", "plantFood.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Rasberry Shrub", "41ZL2W3K5","ToolBox", "19", "Garden", "15.00", "rasberryShrub.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "6pc Screwdriver Set", "NOICOJF5X","Ace", "4", "Small Tools & Accessories", "18.50", "Screwdriver1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "4pc Screwdriver Set", "41ZL2W3K5","Ace", "4", "Small Tools & Accessories", "12.75", "Screwdriver2.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "6pc Screwdriver Set", "Q19S1OUDU","Ace", "4", "Small Tools & Accessories", "16.25", "Screwdriver3.jpg" );
+
+--------------------------DONE
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Shower Door", "UYH2FV4AQ","Ace", "3", "Bathrooms", "390.25", "shower1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Shower Door", "6MK0LVA7I","Ace", "3", "Bathrooms", "360.25", "shower2.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Shower Door", "3SB506TKI","Ace", "3", "Bathrooms", "450.25", "shower3.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "3 pc Socket Set", "ELF1QOUOX","Ace", "4", "Small Tools & Accessories", "9.25", "sockets1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "7 pc Socket Set", "4KWY5ZPZR","Ace", "4", "Small Tools & Accessories", "12.68", "sockets2.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "11 pc Socket Set", "1R5QKD43X","Ace", "4", "Small Tools & Accessories", "22.97", "sockets3.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "11 pc Socket Set", "HZXM7LMOW","Ace", "4", "Small Tools & Accessories", "24.90", "sockets4.jpg" );
+-----------------------DONE
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "125pc ToolBox", "961RVZCJH","Ace", "1", "ToolBox Kits", "125.90", "Toolbox1.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "75pc ToolBox", "W3G3ZXUB1","Ace", "1", "ToolBox Kits", "80.90", "Toolbox2.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "13pc ToolBox", "W9E6HB60H","Ace", "1", "ToolBox Kits", "59.90", "Toolbox3.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "StandardPineBoard - 1X4", "BC0YOD6KO", "ToolBox", "19", "Lumber", "13.00", "StandardPineBoard1X4.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "StandardPineBoard - 1X10in", "60ZLS7GAJ", "ToolBox", "19", "Lumber", "13.00", "StandardPineBoard1X10.jpg" );
+-----------------------DONE
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint", "UKRSSXS2N", "ToolBox", "5", "Paints", "24.00", "KitchenPaint.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint", "ITY2J1XZ0", "ToolBox", "5", "Paints", "34.00", "EnamelPrimer.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint", "YSEZBTIT2", "ToolBox", "5", "Paints", "50.28", "Paint&Primer.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint", "Y1H0YQZTV", "ToolBox", "5", "Paints", "19.00", "PurplePaint.jpg" );
+
+INSERT INTO parts ( part_name, part_number, manufacturer, aisle_number, department, price, image )VALUES ( "Kitchen Paint", "8QRZFFVVO", "ToolBox", "5", "Paints", "29.00", "RedPaint.jpg" );
+----------------------DONE
