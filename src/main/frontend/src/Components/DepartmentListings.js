@@ -70,10 +70,10 @@ return (
         <thead>
         </thead>
         <tbody>
-        {inventory.map((item, index) => (
-          <div key={index}>
+        {inventory.map((item, id) => (
+          <div key={id}>
             <tr>
-            <td><Link to={`/Parts/inventory/${item.department}/${item.partNumber}`}><img src={`${process.env.PUBLIC_URL}/InventoryPics/${item.image}`} alt="Image1" /></Link></td><td className="name">{item.partName}</td><td className="spacer"></td><td className="breed">({item.department})</td>
+            <td><Link to={`/Parts/inventory/${item.department}/${item.id}/${item.partNumber}`}><img src={`${process.env.PUBLIC_URL}/InventoryPics/${item.image}`} alt="Image1" /></Link></td><td className="name">{item.partName}</td><td className="spacer"></td><td className="breed">({item.department})</td>
             </tr>
           </div>
         ))}
