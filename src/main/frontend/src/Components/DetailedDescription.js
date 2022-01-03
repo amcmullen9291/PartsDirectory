@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { connect, useDispatch, useSelector } from 'react-redux';
 import { selectedInventory } from '../Actions/InventoryActions';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function DetailedDescription() {
 
@@ -68,6 +68,8 @@ return (
     <br/>
     <hr/>
     {ItemDetails}
+    <div id="recommendations">
+    </div>
 </>
 )
 }

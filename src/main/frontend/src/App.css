@@ -625,3 +625,19 @@ background-color: white;
 #logoArea{
 left: 0;
 }
+
+#recommendations{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 30vh;
+    width: 25vw;
+    background-color: gray;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.recommendationPic{
+height: 90%;
+width: 90%;
+}
