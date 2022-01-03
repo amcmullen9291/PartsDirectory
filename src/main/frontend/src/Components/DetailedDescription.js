@@ -24,6 +24,7 @@ const dispatch = useDispatch();
           dispatch(selectedInventory(data));
         }
       }, []);
+
 if((SelectedInventory) && Object.keys(SelectedInventory).length > 0){
 console.log("Store Data: ", SelectedInventory.Type[ID].department);
 }

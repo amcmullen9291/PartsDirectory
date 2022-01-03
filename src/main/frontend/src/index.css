@@ -1,0 +1,120 @@
+#bodyDiv{
+    color: #fff;
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+    perspective: 500px;
+}
+
+.banner{
+display: flex;
+}
+
+.panel{
+position: relative;
+width: 25px;
+height: 120px;
+border: 1px solid #B33B24;
+background-color: #ABAD48;
+overflow: hidden;
+animation: rotate 6s ease-in-out
+}
+
+@keyframes rotate {
+from {transform: rotateX(0deg);}
+to {transform: rotateX(360deg);}
+}
+/* pushes each block 25px back*/
+
+.panel:nth-child(1) {
+--left: 0px;
+color: hsl(5, 29%, 55%);
+}
+
+.panel:nth-child(2) {
+--left: -25px;
+color: hsl(8, 19%, 54%);
+}
+
+.panel:nth-child(3){
+--left: -50px;
+color: hsl(24, 25%, 49%);
+}
+
+.panel:nth-child(4){
+--left: -75px;
+color: hsl(40, 30%, 44%);
+}
+
+.panel:nth-child(5){
+--left: -100px;
+color: hsl(64, 31%, 41%);
+}
+
+.panel:nth-child(6) {
+--left: -125px;
+color:	hsl(80, 47%, 62%);
+}
+
+.panel:nth-child(7){
+--left: -150px;
+color:	hsl(92, 54%, 79%);
+}
+
+.panel:nth-child(8){
+--left: -175px;
+}
+
+.panel:nth-child(9){
+--left: -200px;
+}
+
+.panel:nth-child(10) {
+--left: -225px;
+}
+
+.panel:nth-child(11){
+--left: -250px;
+}
+
+.panel:nth-child(12){
+--left: -275px;
+}
+
+.panel:nth-child(13){
+--left: -300px;
+}
+
+.panel:nth-child(14) {
+--left: -325px;
+}
+
+.panel:nth-child(15){
+--left: -350px;
+}
+
+.panel:nth-child(16){
+--left: -375px;
+}
+
+.panel:nth-child(17){
+--left: -400px;
+}
+
+.panel:nth-child(18) {
+--left: -425px;
+}
+
+
+.panel:hover{
+transform: scale(1.2);
+}
+
+.panel::before{
+position: absolute;
+left: var(--left);
+content: "Tool Box";
+font-size: 96px;
+width: max-content;
+}
+

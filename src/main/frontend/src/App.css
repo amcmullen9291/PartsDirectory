@@ -607,3 +607,17 @@ font-size: 18px;
 color: yellow;
 font-size: 18px;
 }
+
+#footerArea{
+margin-bottom: 0;
+height: 25vh;
+background-color: white;
+margin-left: 15%;
+margin-right: 15%;
+border: 2px solid #806517;
+}
+
+#middleWords{
+margin-left: 15%;
+background-color: white;
+}
