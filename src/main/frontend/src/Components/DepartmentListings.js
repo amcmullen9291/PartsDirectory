@@ -43,7 +43,7 @@ const INVENTORY_LIST_URL = "http://localhost:8080/parts/inventory";
 return (
 <>
    <div>
-    <center><h1>Toolbox</h1></center>
+    <center><h1>ToolBox</h1></center>
     </div>
     <center><a href={"/"} id="returnHomeLink">Return to Main Menu</a></center>
     <br/>

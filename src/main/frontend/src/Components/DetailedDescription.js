@@ -43,7 +43,7 @@ console.log("Store Data: ", SelectedInventory.Type[ID].department);
 			<ul>
 				<li>{item.department} Department</li>
 				<li> Located in Aisle {item.aisleNumber}</li>
-				<li>Made by {item.manufacturer}</li>
+				<li>Made by {manufacturer}</li>
 				<li></li>
 				<li>Price: ${item.price}</li>
 			</ul>
@@ -62,7 +62,7 @@ console.log("Store Data: ", SelectedInventory.Type[ID].department);
 return (
 <>
   <div>
-    <center><h1>The Circular</h1></center>
+    <center><h1>ToolBox</h1></center>
     </div>
     <center><a href={"/Parts/Departments"} id="returnHomeLink">Return to Full Listings</a></center>
     <br/>
